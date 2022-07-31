@@ -1,7 +1,10 @@
 import { useQuasar } from 'quasar'
 
 import {
+  matArrowDropDown,
+  matCancel,
   matDone,
+  matError,
   matFontDownload,
   matMenu,
 } from '@quasar/extras/material-icons'
@@ -14,6 +17,9 @@ const icons: Icon = {
   done: matDone,
   font_download: matFontDownload,
   menu: matMenu,
+  error: matError,
+  arrow_drop_down: matArrowDropDown,
+  cancel: matCancel,
 }
 
 export function useIcon() {
