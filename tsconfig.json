@@ -2,7 +2,10 @@
   "extends": "@vue/tsconfig/tsconfig.web.json",
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
   "compilerOptions": {
+    "allowJs": true,
     "baseUrl": ".",
+    "importsNotUsedAsValues": "remove",
+    "isolatedModules": false,
     "paths": {
       "@/*": ["./src/*"]
     }
