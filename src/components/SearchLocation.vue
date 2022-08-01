@@ -55,8 +55,8 @@ export default defineComponent({
     const isSelected = ref<boolean>(false)
 
     function submitted() {
-      location.value = ''
       emit('submitted', location.value)
+      location.value = ''
     }
 
     return {
