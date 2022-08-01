@@ -15,7 +15,7 @@ function loadWeather(location: string) {
 <template>
   <main class="full-width full-height row justify-center">
     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-xs-12">
-      <q-card class="shadow-19 border-radius">
+      <q-card class="shadow-19 border-radius bg-indigo-10">
         <show-weather-information
           v-if="weather"
           :image="image"

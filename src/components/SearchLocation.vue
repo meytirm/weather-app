@@ -12,6 +12,7 @@
         hide-selected
         fill-input
         clearable
+        bg-color="white"
         input-debounce="0"
         label="Search Location..."
         :options="places"
@@ -28,7 +29,8 @@
       <q-btn
         type="submit"
         class="full-height full-width"
-        color="indigo-10"
+        color="white"
+        text-color="black"
         :disable="!location"
         :loading="loading"
         >Get weather
