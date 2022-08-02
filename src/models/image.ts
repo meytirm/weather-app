@@ -1,6 +1,7 @@
 export interface ImageModel {
   height: number
   urls: UrlsModel
+  url: string
   width: number
   description: string
   alt_description: string

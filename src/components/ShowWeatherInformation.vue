@@ -76,7 +76,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, PropType } from 'vue'
+import { ImageModel } from '@/models/image'
 
 export default defineComponent({
   name: 'ShowWeatherInformation',
@@ -86,7 +87,7 @@ export default defineComponent({
       required: true,
     },
     image: {
-      type: Object,
+      type: Object as PropType<ImageModel | null>,
       required: true,
     },
   },
