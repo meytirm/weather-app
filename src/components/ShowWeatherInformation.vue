@@ -77,7 +77,7 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-import { ImageModel } from '@/models/image'
+import type { ImageModel } from '@/models/image'
 
 export default defineComponent({
   name: 'ShowWeatherInformation',
