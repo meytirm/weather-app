@@ -5,7 +5,7 @@ function weatherService(coordinates: string) {
   const baseUrl = import.meta.env.VITE_WEATHER_URL
 
   return apiService.get(
-    `${baseUrl}/current?access_key=${accessKey}&query=${coordinates}&units=m`
+    `${baseUrl}current?access_key=${accessKey}&query=${coordinates}&units=m`
   )
 }
 

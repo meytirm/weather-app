@@ -5,7 +5,7 @@ function imagesService(city: string) {
   const baseUrl = import.meta.env.VITE_UNSPLASH_URL
 
   return apiService.get(
-    `${baseUrl}/search/photos?query=${city}&client_id=${accessKey}`
+    `${baseUrl}search/photos?query=${city}&client_id=${accessKey}`
   )
 }
 
