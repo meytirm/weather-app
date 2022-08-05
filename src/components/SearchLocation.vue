@@ -4,8 +4,9 @@
     @submit.prevent="submitted"
     style="z-index: 1000"
   >
-    <div class="col-8">
+    <div class="col-sm-8 col-xs-12">
       <q-select
+        dense
         filled
         v-model="location"
         use-input
@@ -25,11 +26,12 @@
         </template>
       </q-select>
     </div>
-    <div class="col-4">
+    <div class="col-sm-4 col-xs-12">
       <q-btn
+        dense
         type="submit"
         class="full-height full-width"
-        color="white"
+        color="amber-4"
         text-color="black"
         :disable="!location"
         :loading="loading"

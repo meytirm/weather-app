@@ -5,7 +5,7 @@
       style="background: rgba(24, 0, 77, 0.66)"
     >
       <div
-        class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-8 column items-center justify-around"
+        class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-12 column items-center justify-around"
       >
         <div class="flex flex-center justify-around full-width">
           <div class="text-h1">
@@ -44,7 +44,7 @@
             <div class="column items-center">
               <span class="text-overline">wind</span>
               <span class="text-body2 text-weight-bold">
-                {{ weather.current.wind_speed }} m/s
+                {{ weather.current.wind_speed }} km/h
               </span>
             </div>
           </div>
@@ -65,7 +65,9 @@
           {{ image.alt_description }}
         </div>
       </div>
-      <div class="col-4 flex items-center justify-center text-body1">
+      <div
+        class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 flex items-center justify-center text-body1"
+      >
         <div class="text-uppercase column city text-weight-bold">
           {{ weather.location.name }},
           {{ weather.location.country }}

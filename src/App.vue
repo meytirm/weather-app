@@ -43,16 +43,14 @@ useIcon()
           <!--            dense-->
           <!--            icon="menu"-->
           <!--          />-->
-          <q-toolbar-title>Header</q-toolbar-title>
-          <q-toolbar-title v-if="timeNow">{{
-            timeNow.localtime
-          }}</q-toolbar-title>
-          <q-toggle
-            label="dark mode"
-            model-value="darkMode"
-            v-model="darkMode"
-            @click="toggleDarkMode(darkMode)"
-          />
+          <q-toolbar-title>Weather</q-toolbar-title>
+          <div v-if="timeNow">local time: {{ timeNow.localtime }}</div>
+          <!--          <q-toggle-->
+          <!--            label="dark mode"-->
+          <!--            model-value="darkMode"-->
+          <!--            v-model="darkMode"-->
+          <!--            @click="toggleDarkMode(darkMode)"-->
+          <!--          />-->
         </q-toolbar>
       </q-header>
 
